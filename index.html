@@ -101,6 +101,11 @@
             font-size: 5vh;
             float: left;
         }
+         learn_close {
+            cursor: pointer;
+            font-size: 5vh;
+            float: left;
+        }
         #welcome {
             font-size: 5vw;
             font-weight: bold;
@@ -207,11 +212,14 @@
         <div class="source" id="terms">
             Computer Terminology
         </div>
+        <div class="source" id="learnmore">
+            Learn More!
+        </div>
         <div class="source" id="source">
             Sources
 
         </div>
-
+        
 
     </div>
     <div class="modal" id="source_modal">
@@ -328,6 +336,32 @@
         <div class="txt_cont" style="float:right; ">
             The GUI was brought out in the Apple Macintosh in 1984. The GUI revolutionized modern computing
         </div>
+    </div>
+      <div class="modal" id="learn_more">
+        <div class="modal-content" style="font-size:1.5vw; ">
+            <span class="learn_close">&times; </span>
+            <center><h3>Want to Learn More? </h3></center>
+            <a href="https://www.w3schools.com/">Learn Programming  </a>
+            <br>
+            <a href="https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">Computer Science Crash Course </a>
+            <br>
+          <a href="https://www.youtube.com/watch?v=RhS-AL2ZcyE&t=24s">Logic Gates </a>
+           <br>
+            <iframe width="350vw;" height="200vh;" src="https://www.youtube.com/embed/RhS-AL2ZcyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <a href="https://www.youtube.com/watch?v=XIGSJshYb90">Graphical User Interface</a>
+      <br>
+      <iframe width="350vw;" height="200vh" src="https://www.youtube.com/embed/XIGSJshYb90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <br>
+       <a href="https://www.youtube.com/watch?v=ExxFxD4OSZ0">Computer Parts Explained  </a>
+       <br>
+       <iframe width="350vw" height="200vh;" src="https://www.youtube.com/embed/ExxFxD4OSZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <br>
+       <a href="https://www.youtube.com/watch?v=6H_9l9N3IXU">Quatum Computing and Exncryption </a>
+       <br>
+       <iframe width="350vw" height="200vh;" src="https://www.youtube.com/embed/6H_9l9N3IXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
     </div>
     <!--End of Items -->
     <!--Start of Welcome Modal-->
@@ -849,6 +883,7 @@
         var gui = document.getElementById("GUI");
         var source_modal = document.getElementById("source_modal");
         var terminology = document.getElementById("terminology");
+        var learn = document.getElementById("learn_more");
         //spans
         var span = document.getElementsByClassName("span")[0]; //welcome span
         var span_a = document.getElementsByClassName("span_a")[0];
@@ -859,6 +894,7 @@
         var span_g = document.getElementsByClassName("span_g")[0];
         var term_close = document.getElementsByClassName("term_close")[0];
         var source_close = document.getElementsByClassName("source_close")[0];
+        var learn_close = document.getElementsByClassName("learn_close")[0];
         //btns
         var item_a = document.getElementById("item_a");
         var item_b = document.getElementById("item_b");
@@ -867,8 +903,9 @@
         var item_e = document.getElementById("item_e");
         var item_f = document.getElementById("item_f");
         var term = document.getElementById("terms");
+        var learnmore = document.getElementById("learnmore");
 
-
+        //Open Btns
         item_a.onclick = function () {
             abacus.style.display = "block";
         }
@@ -893,6 +930,10 @@
         term.onclick = function () {
             terminology.style.display = "block";
         }
+        learnmore.onclick = function() {
+            learn.style.display = "block";
+        }
+        //Span Btns
         span_a.onclick = function () {
             abacus.style.display = "none";
         }
@@ -923,6 +964,9 @@
         }
         term_close.onclick = function () {
             terminology.style.display = "none";
+        }
+        learn_close.onclick = function() {
+            learn.style.display = "none";
         }
         function onload() {
             modal.style.display = "block";
