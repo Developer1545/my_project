@@ -106,6 +106,11 @@
             font-size: 5vh;
             float: left;
         }
+        span_google {
+			cursor: pointer;
+            font-size: 5vh;
+            float: left;
+		}
         #welcome {
             font-size: 4vw;
             font-weight: bold;
@@ -394,8 +399,26 @@
 
     </div>
 
-    <!--End of Welcome modal-->
-    <!--Abacus Modal-->
+    <!--End of Welcome modal//Start of Google Modal    -->
+
+    <div id="modal_google" class="modal" style="text-align:center; ">
+        <div class="modal-content" style=" color:#0f223f; margin-top:5%; height:75%;">
+            <span class="span_google">&times;</span>
+            <a id="welcome">
+                Computer Science History and Basics
+            </a>
+            <h4>Made by PJ Passero </h4>
+            <br />
+            <img id="btn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTk8Ds7Fux5OeBsYF9CyK2U7TgsZIIT906rwUepGJeIW8XYmAjw" alt="quote" style="margin-top:0%; height:50vh;width:20vw"/>
+
+        </div>
+
+    </div>
+
+    
+    
+
+    <!--End of Google//Abacus Modal-->
     <div id="abacus" class="modal">
         <div class="modal-content" style="text-align:center; height:200%">
             <span class="span_a">&times;</span>
@@ -527,7 +550,7 @@
 					  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRxxpcCPlNxZ0Spty3ilAQIHyx3tnvaIZVGyPvY04WYIyVjePwK" alt="LEE" style="margin-top:35%;height:25vh; width:20vw; float:left" />
 				
 					<p style="height:15vh; width:auto; word-wrap:break-word; margin-top:25%; ">
-                      Google came along in 1998. This is Google's orginal homepage. 
+                      <a id="google_btn" style="color:blue;">Google</a> came along in 1998. This is Google's orginal homepage. 
 
                     </p>
                 </div>
@@ -799,6 +822,7 @@
         var source_modal = document.getElementById("source_modal");
         var terminology = document.getElementById("terminology");
         var learn = document.getElementById("learn_more");
+        var google = document.getElementById("modal_google");
         //spans
         var span = document.getElementsByClassName("span")[0]; //welcome span
         var span_a = document.getElementsByClassName("span_a")[0];
@@ -810,6 +834,7 @@
         var term_close = document.getElementsByClassName("term_close")[0];
         var source_close = document.getElementsByClassName("source_close")[0];
         var learn_close = document.getElementsByClassName("learn_close")[0];
+        var span_google = document.getElementsByClassName("span_google")[0];
         //btns
         var item_a = document.getElementById("item_a");
         var item_b = document.getElementById("item_b");
@@ -820,6 +845,7 @@
         var term = document.getElementById("terms");
         var learnmore = document.getElementById("learnmore");
         var btn = document.getElementById("btn");
+        var google_btn = document.getElementById("google_btn");
 
         //Open Btns
         item_a.onclick = function () {
@@ -839,6 +865,9 @@
         }
         item_f.onclick = function () {
             gui.style.display = "block";
+        }
+        google_btn.onclick = function () {
+            google_modal.style.display = "block";
         }
         source.onclick = function () {
             source_modal.style.display = "block";
@@ -885,6 +914,9 @@
             terminology.style.display = "none";
         }
         learn_close.onclick = function() {
+            learn.style.display = "none";
+        }
+        span_google.onclick = function() {
             learn.style.display = "none";
         }
         function onload() {
