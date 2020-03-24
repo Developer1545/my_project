@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Science History and Basics </title>
     <style>
         body {
-          background-image: linear-gradient(#9c9ab2, #0f223f);
+            background-image: linear-gradient(#9c9ab2, #0f223f);
         }
-
+        
         .modal {
             display: none;
             position: fixed;
@@ -20,104 +20,113 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
         }
-
-
+        
         .modal-content {
             background-color: #c1cfde;
             margin: 15% auto;
-            margin-top:10%;
+            margin-top: 10%;
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
-            font-weight:bold;
-
+            font-weight: bold;
         }
-
-
+        
         .close {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
-
-            .close:hover,
-            .close:focus {
-                color: black;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-    span {
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        span {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-          }
-              span_a {
+        }
+        
+        span_a {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-            }
-             span_b {
+        }
+        
+        span_b {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-            }
-            span_c {
+        }
+        
+        span_c {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-            }
-            span_d {
+        }
+        
+        span_d {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-            }
-            span_e {
+        }
+        
+        span_e {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-            }
-            span_f {
+        }
+        
+        span_f {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-            }
-		    span_g {
-			cursor: pointer;
-            font-size: 5vh;
-            float: left;
-		    }
-	        source_close {
-			cursor: pointer;
-            font-size: 5vh;
-            float: left;
-		        }
-            term_close {
+        }
+        
+        span_g {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-             }
-            learn_close {
+        }
+        
+        source_close {
             cursor: pointer;
             font-size: 5vh;
             float: left;
-            }
-            span_google {
-			cursor: pointer;
+        }
+        
+        term_close {
+            cursor: pointer;
             font-size: 5vh;
             float: left;
-		}
-     #welcome {
+        }
+        
+        learn_close {
+            cursor: pointer;
+            font-size: 5vh;
+            float: left;
+        }
+        
+        span_google {
+            cursor: pointer;
+            font-size: 5vh;
+            float: left;
+        }
+        
+        #welcome {
             font-size: 4vw;
             font-weight: bold;
             color: #0f223f;
         }
-
-    #btn {
+        
+        #btn {
             height: 10vh;
             width: 25vw;
             background-color: #141722;
@@ -126,18 +135,20 @@
             margin: 10%;
             margin-bottom: 0%;
         }
-
-    .item {
+        
+        .item {
             height: 25vh;
             width: 20vw;
             margin: 2%;
             margin-bottom: 0%;
             color: #141722;
         }
-    .item:hover {
-            cursor:pointer;
+        
+        .item:hover {
+            cursor: pointer;
         }
-    .txt_cont {
+        
+        .txt_cont {
             height: auto;
             width: 22vw;
             word-wrap: break-word;
@@ -146,29 +157,32 @@
             font-weight: bold;
             color: #fcf8f9;
         }
-    .column {
-            height:auto;
-            width:28vw;
-            float:left;
-            margin:2vw;
+        
+        .column {
+            height: auto;
+            width: 28vw;
+            float: left;
+            margin: 2vw;
         }
-    .column_modal {
-            height:auto;
+        
+        .column_modal {
+            height: auto;
             width: 46%;
-            float:left;
-            margin:2%;
-            text-align:center;
-            word-wrap:break-word;
-            margin-bottom:5%;
+            float: left;
+            margin: 2%;
+            text-align: center;
+            word-wrap: break-word;
+            margin-bottom: 5%;
         }
-    .column_item {
-            width:46%;
-            margin-bottom:5%;
-            text-align:center;
-            
+        
+        .column_item {
+            width: 46%;
+            margin-bottom: 5%;
+            text-align: center;
         }
-    .source:hover {
-            cursor:pointer;
+        
+        .source:hover {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -177,7 +191,7 @@
 --Color Scheme by Coolors: https://coolors.co/export/png/141722-142032-7495ac-c1cfde-cfe0fb
 --Resources: www.W3schools.com
   <!--Logic Gates:http://www.ee.surrey.ac.uk/Projects/Labview/gatesfunc/#notgate
-  
+
   -->
 
 <body onload="onload()">
@@ -185,7 +199,6 @@
     <div class="column">
         <!--Start of Items -->
         <img class="item" id="item_a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSU0Y4OGkBoqAcSiWbH2xx66NI9U4JbYWMUAQkJijfJ1fU1A57k">
-
 
         <div class="txt_cont">
             The Abacus is one of the earliest know computers that orginated in Babylon in 300 BCE
@@ -203,7 +216,6 @@
         <div class="txt_cont">
             Binary 1s and 0s are the smallest unit of stortage within a computer.
         </div>
-
 
     </div>
     <div class="column" style="text-align:center;color:#fcf8f9;">
@@ -236,7 +248,6 @@
             Sources
 
         </div>
-        
 
     </div>
     <div class="modal" id="source_modal">
@@ -287,59 +298,60 @@
     <div class="modal" id="terminology">
         <div class="modal-content" style="font-size:1.5vw; ">
             <span class="term_close">&times; </span>
-            <center><h3>Terminology </h3></center>
+            <center>
+                <h3>Terminology </h3></center>
             <h4>Bit-</h4>
             <h6>The Smallest unit of storage in an electrical computer</h6>
-          
-             <h4>Byte-</h4>
+
+            <h4>Byte-</h4>
             <h6>8 Bits equals 1 byte</h6>
-     
-             <h4>Function-</h4>
+
+            <h4>Function-</h4>
             <h6>A set of steps or instructions within a program a comptuer follows for an output that can be called upon when needed.</h6>
-          
+
             <h4>Graphical User Interface (GUI)-</h4>
             <h6>A computer program that allows the user</h6>
-           
+
             <h4>Gordon Moore-</h4>
             <h6>Co-Founder of Intel Corporation. He created Moore's Law</h6>
-          
-             <h4>Hard Drive:</h4>
+
+            <h4>Hard Drive:</h4>
             <h6>A device to store data permanently. They come in HDD or SSD. HDD is a Hard Disk Drive and uses a spinning disk to write data to. An SSD uses integrated circuts to store data</h6>
-            
+
             <h4>Internet:</h4>
             <h6>Multiple computers connected together that are able to transimit data between them.</h6>
-           
+
             <h4>Moore's Law-</h4>
             <h6>The Law that states every 18 months, the complexity of a processor doubles.</h6>
-          
+
             <h4>Processor-</h4>
             <h6>The brain of any computer. It performs various calculations.</h6>
-           
+
             <h4>Program-</h4>
             <h6>A set of instructions a computer follows to perform a task</h6>
-             
+
             <h4>Tim Berners-Lee-</h4>
             <h6>Creator of the World Wide Web and HTTP (Hyper Text Transfer Protocol) in 1993.</h6>
-           
+
             <h4>Transistor-</h4>
             <h6>A small integrated circut part that can control electrical current. </h6>
 
             <h4>RAM-</h4>
             <h6>Stands for Random Acces Memory. This is where computers store temporary instructions. When power is cut to the computer, any thing in the RAM is lost. This is why it is imporant to always save your work.
 			</h6>
-           
+
             <h4>ROM-</h4>
             <h6>Stands for Read Only Memory. This is where important computer instructions are stored. Computers can only read this memory meaning they can't edit it. </h6>
-           
+
             <h4>Storage-</h4>
             <h6>A place within a computer where data can be permanently written for the user to access later. Usually this data is written to a hard drive.</h6>
-          
+
             <h4>Variable-</h4>
             <h6>A way of storing data within a computer program.</h6>
-            
+
             <h4>World Wide Web-</h4>
             <h6>A method of displaying content to a user on the internet via websites.</h6>
- 
+
         </div>
 
     </div>
@@ -358,29 +370,30 @@
             The GUI was brought out in the Apple Macintosh in 1984. The GUI revolutionized modern computing
         </div>
     </div>
-      <div class="modal" id="learn_more">
+    <div class="modal" id="learn_more">
         <div class="modal-content" style="font-size:1.5vw; ">
             <span class="learn_close">&times; </span>
-            <center><h3>Want to Learn More? </h3></center>
+            <center>
+                <h3>Want to Learn More? </h3></center>
             <a href="https://www.w3schools.com/">Learn Programming  </a>
             <br>
             <a href="https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">Computer Science Crash Course </a>
             <br>
-          <a href="https://www.youtube.com/watch?v=RhS-AL2ZcyE&t=24s">Logic Gates </a>
-           <br>
+            <a href="https://www.youtube.com/watch?v=RhS-AL2ZcyE&t=24s">Logic Gates </a>
+            <br>
             <iframe width="350vw;" height="200vh;" src="https://www.youtube.com/embed/RhS-AL2ZcyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <br>
-      <a href="https://www.youtube.com/watch?v=XIGSJshYb90">Graphical User Interface</a>
-      <br>
-      <iframe width="350vw;" height="200vh" src="https://www.youtube.com/embed/XIGSJshYb90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       <br>
-       <a href="https://www.youtube.com/watch?v=ExxFxD4OSZ0">Computer Parts Explained  </a>
-       <br>
-       <iframe width="350vw" height="200vh;" src="https://www.youtube.com/embed/ExxFxD4OSZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       <br>
-       <a href="https://www.youtube.com/watch?v=6H_9l9N3IXU">Quatum Computing and Exncryption </a>
-       <br>
-       <iframe width="350vw" height="200vh;" src="https://www.youtube.com/embed/6H_9l9N3IXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <a href="https://www.youtube.com/watch?v=XIGSJshYb90">Graphical User Interface</a>
+            <br>
+            <iframe width="350vw;" height="200vh" src="https://www.youtube.com/embed/XIGSJshYb90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <a href="https://www.youtube.com/watch?v=ExxFxD4OSZ0">Computer Parts Explained  </a>
+            <br>
+            <iframe width="350vw" height="200vh;" src="https://www.youtube.com/embed/ExxFxD4OSZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <a href="https://www.youtube.com/watch?v=6H_9l9N3IXU">Quatum Computing and Exncryption </a>
+            <br>
+            <iframe width="350vw" height="200vh;" src="https://www.youtube.com/embed/6H_9l9N3IXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </div>
@@ -394,19 +407,18 @@
             </a>
             <h4>Made by PJ Passero </h4>
             <br />
-            <img id="btn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTk8Ds7Fux5OeBsYF9CyK2U7TgsZIIT906rwUepGJeIW8XYmAjw" alt="quote" style="margin-top:0%; height:50vh;width:20vw"/>
+            <img id="btn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTk8Ds7Fux5OeBsYF9CyK2U7TgsZIIT906rwUepGJeIW8XYmAjw" alt="quote" style="margin-top:0%; height:50vh;width:20vw" />
 
         </div>
 
     </div>
 
-    
     <div id="abacus" class="modal">
         <div class="modal-content" style="text-align:center; height:200%">
             <span class="span_a">&times;</span>
             <h1> The Abacus and Early Computing</h1>
             <p>
-            Above is the ENIAC, or the Electronic Numerical Integrator and Computer. This computer was composed of 18,000 vacuum tubes and weighed 30 tons! It took up a whole room and had many manual switches. It was built at the University of Pennsylvania by John Mauchly and J. Presper Ecker. It was built for the United States Miltary to perform calculations for WW2. It could add as many as 5,000 digits in a second. One main difference from a computer today is that it had no memory to store certain functions and commands.   
+                Above is the ENIAC, or the Electronic Numerical Integrator and Computer. This computer was composed of 18,000 vacuum tubes and weighed 30 tons! It took up a whole room and had many manual switches. It was built at the University of Pennsylvania by John Mauchly and J. Presper Ecker. It was built for the United States Miltary to perform calculations for WW2. It could add as many as 5,000 digits in a second. One main difference from a computer today is that it had no memory to store certain functions and commands.
             </p>
             <!-- .-->
             <!--Start Left-->
@@ -423,16 +435,15 @@
                 <br />
                 <div class="column_item">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwlRoCoffAKgS30pTPBjW3Ogd0bGiiqSt4Yzh34G6Weckkx6yb" alt="punch_card" style="height:25vh; width:20vw;" />
-					<p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">This is a punch card, it contained instructions for the computer.</p>
+                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">This is a punch card, it contained instructions for the computer.</p>
                 </div>
-
 
             </div>
             <!--End Left//Start Right-->
             <div class="column_modal">
                 <div class="column_item">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEu1qh40UknEz3-6eVgKRKFmZZZaiYtBv7U8WZdBjUl4QM-C6W" alt="ENIAC" style="height:25vh; width:20vw;" />
-                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">Above is the ENIAC, or the Electronic Numerical Integrator and Computer. This computer was composed of 18,000 vacuum tubes and weighted 30 tons! It took up a whole room and had many manual switchs. It was built at the University of Pennsylvannia by  John Mauchly and J. Presper Ecker. It was built for the United States Miltary to perform calculations for WW2. It could add as many as 5,000 digits in a second. One main differnce from a computer today is that it had no memory to store certain functions and commands. </p>
+                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">Above is the ENIAC, or the Electronic Numerical Integrator and Computer. This computer was composed of 18,000 vacuum tubes and weighted 30 tons! It took up a whole room and had many manual switchs. It was built at the University of Pennsylvannia by John Mauchly and J. Presper Ecker. It was built for the United States Miltary to perform calculations for WW2. It could add as many as 5,000 digits in a second. One main differnce from a computer today is that it had no memory to store certain functions and commands. </p>
                 </div>
                 <br />
 
@@ -447,9 +458,7 @@
             <span class="span_b">&times;</span>
             <h1> The Transistor</h1>
             <p>
-               Vacuum Tubes were great and all... but they were big and bulky, which was one of the reasons a computer weight nearly 30 tons! Luckily that was solved with the invention of the transistor. In the core of all processors, there are very small transistors made of silicon. Transistors can furthermore be used to make logic gates which are better explained under the Binary tab. Transistors inside of a computer are made of Silicon, which is a semiconductor. This means that it can control electrical current flow. Computers can perform millions of tasks in seconds thanks to these transistors.
-
-
+                Vacuum Tubes were great and all... but they were big and bulky, which was one of the reasons a computer weight nearly 30 tons! Luckily that was solved with the invention of the transistor. In the core of all processors, there are very small transistors made of silicon. Transistors can furthermore be used to make logic gates which are better explained under the Binary tab. Transistors inside of a computer are made of Silicon, which is a semiconductor. This means that it can control electrical current flow. Computers can perform millions of tasks in seconds thanks to these transistors.
 
             </p>
             <!--Left Column Start-->
@@ -466,8 +475,8 @@
                     <br>
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">This is an Intel Core i7, which contains about 1.7 billion transistors.</p>
                 </div>
-               
-                   <div class="column_item">
+
+                <div class="column_item">
                     <img src="https://scx1.b-cdn.net/csz/news/800/2015/553a4b60cb2d8.jpg" alt="the_boys" style="height:25vh; width:20vw; float:left; margin-left:0%; margin-top:6%;margin-bottom:0%;" />
                     <br>
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">This is a prediction graph of the amount of transistors in certain processors. When we look at it, we can see that the amount doubles in the given time.</p>
@@ -480,7 +489,7 @@
                     <p>Moore's Law is the law that predicts the complexity of integrated circuts. It states that every 18 months, the complexity doubles.</p>
                 </div>
                 -->
-                 <div class="column_item">
+                <div class="column_item">
                     <img src="https://money.cnn.com/2005/11/17/news/newsmakers/gates_philanthropy/moore_gordon_e_intel.jpg" alt="MOORE" style="float:left;height:25vh; width:20vw;" />
                     <br>
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">This is Gordon Moore, the author of Moore's law. He was the co-founder of Intel, a popular processor and chipset maker.</p>
@@ -490,7 +499,7 @@
                     <img src="https://i.pinimg.com/originals/1d/22/0f/1d220ffc26f8fbb28752f159bc5035e4.jpg" alt="the_boys" style="height:25vh; width:20vw; float:left; margin-left:0%; margin-top:6%;margin-bottom:0%;" />
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">These guys above worked on this invention at Bell Labs in New Jersy. The first working model was tested in 1947.</p>
                 </div>
-                <div class="column_item" >
+                <div class="column_item">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYGyerCjnoQFVf2L-UrZWhD6G3ixwlatbYcLca_Z6RjvWin9lO" alt="iphone" style="float:left; height:25vh; width:20vw; " />
                     <br>
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">Smartphones like the Iphone above can have as many as 2 billion transistors.</p>
@@ -498,7 +507,7 @@
                 </div>
             </div>
             <!--Right Column End-->
-        
+
             <!--End of Right Column-->
 
         </div>
@@ -512,33 +521,33 @@
             <span class="span_c">&times;</span>
             <h1> The World Wide Web and Internet </h1>
             <p>
-                The Internet is probably one of the most important things in our lives today. Originally the internet was a Department of Defense project. They wanted ways of transferring data without using telephone lines as they were prone to damage. In February of 1958, Neil McElroy of the Department of Defense signed the Dept. of Defense Directive 5105.15 which launched the Advanced Research Project Agency(ARPA). This was the start of the internet. ARPANET was the first working internet model that sent its first message on 8/29/1969. One computer was located at UCLA and the other at Stanford University. 2014 marketed 45 years since ARPANET was invented.            </p>
+                The Internet is probably one of the most important things in our lives today. Originally the internet was a Department of Defense project. They wanted ways of transferring data without using telephone lines as they were prone to damage. In February of 1958, Neil McElroy of the Department of Defense signed the Dept. of Defense Directive 5105.15 which launched the Advanced Research Project Agency(ARPA). This was the start of the internet. ARPANET was the first working internet model that sent its first message on 8/29/1969. One computer was located at UCLA and the other at Stanford University. 2014 marketed 45 years since ARPANET was invented. </p>
             <!--Start of the Left -->
             <div class="column_modal">
                 <div class="column_item">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQyE-xoePfX6csnAcRKMIc-7HebXd4gUfRSBn0J52XNu710WTN_" alt="LEE" style="height:25vh; width:20vw; float:left" />
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">
-                        This man is Time Berners-Lee, the father of the World Wide Web.  One misconception is that the Internet and Web are the same thing, but they aren't. The Web is the way people acccess data in the form of websites and hyperlinks. Tim Berners-Lee worked at CERN. Lee also developed HTTP, Hyper-Text Transfer Protocol.
+                        This man is Time Berners-Lee, the father of the World Wide Web. One misconception is that the Internet and Web are the same thing, but they aren't. The Web is the way people acccess data in the form of websites and hyperlinks. Tim Berners-Lee worked at CERN. Lee also developed HTTP, Hyper-Text Transfer Protocol.
                     </p>
                 </div>
-				<br>
+                <br>
                 <div class="column_item">
-					  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRxxpcCPlNxZ0Spty3ilAQIHyx3tnvaIZVGyPvY04WYIyVjePwK" alt="LEE" style="margin-top:35%;height:25vh; width:20vw; float:left" />
-				
-					<p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">
-                      <a id="google_btn" style="color:blue;">Google</a> came along in 1998. This is Google's orginal homepage. 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRxxpcCPlNxZ0Spty3ilAQIHyx3tnvaIZVGyPvY04WYIyVjePwK" alt="LEE" style="margin-top:35%;height:25vh; width:20vw; float:left" />
+
+                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">
+                        <a id="google_btn" style="color:blue;">Google</a> came along in 1998. This is Google's orginal homepage.
 
                     </p>
-                      <div id="modal_google" class="modal" style="text-align:center; ">
-                            <div class="modal-content" style="color:#0f223f; margin-top:5%; height:95%; background-color:white;">
-                               <span class="span_google">&times;</span>
-                               <img src="google.PNG" alt="google" style="width:50%; height:25%;"/>
-                               <br>
-                               
-                               <div style="height:25vh; width:100%; float:left;background-color:lightgray; text-align:center; color:black;">
+                    <div id="modal_google" class="modal" style="text-align:center; ">
+                        <div class="modal-content" style="color:#0f223f; margin-top:5%; height:95%; background-color:white;">
+                            <span class="span_google">&times;</span>
+                            <img src="google.PNG" alt="google" style="width:50%; height:25%;" />
+                            <br>
+
+                            <div style="height:25vh; width:100%; float:left;background-color:lightgray; text-align:center; color:black;">
                                 <p>Search the web using Google!</p>
                                 <br>
-                                    <input type="text" id="search"/>
+                                <input type="text" id="search" />
                                 <br>
                                 <select id="search_results">
                                     <option value="10">10 results</option>
@@ -547,31 +556,31 @@
                                     <option value="40">40 results</option>
                                 </select>
                                 <button onclick="search()">Google Search</button>
-                                 <button onclick="">I'm Feeling Lucky</button>
-                                 <br>
-                                 <p><i>Index Contains ~ 25 million pages (soon to be much bigger)</i></p>
-                                 <br>
-                                 <div style="height:15vh; width:100%">
-                                     <a href="" style="font-size:2.5vw;">About Google!</a>
-                                 <br>
-                                
-                                 </div>
-                                 <div style="height:2vh; width:100%;margin-bottom:0%;">
-                                     <a href="">Stanford Search</a> <a href="">Linux Search</a>
-                                 </div>
+                                <button onclick="">I'm Feeling Lucky</button>
+                                <br>
+                                <p><i>Index Contains ~ 25 million pages (soon to be much bigger)</i></p>
+                                <br>
+                                <div style="height:15vh; width:100%">
+                                    <a href="" style="font-size:2.5vw;">About Google!</a>
+                                    <br>
+
+                                </div>
+                                <div style="height:2vh; width:100%;margin-bottom:0%;">
+                                    <a href="">Stanford Search</a> <a href="">Linux Search</a>
+                                </div>
                                 <div style="background-color:lightgray; height:15vh; width:100%;">
                                     <p> Get Google! updates monthly! </p>
                                     <br>
-                                    <input type="text" placeholder="your email:"/>
+                                    <input type="text" placeholder="your email:" />
                                     <button onclick="">Subscribe</button>
                                     <a href="">Archive</a>
                                 </div>
                                 <p> Copyright &copy; 1997-8 Stanford University </p>
-                                </div>
-                                
                             </div>
 
                         </div>
+
+                    </div>
                 </div>
 
             </div>
@@ -584,22 +593,17 @@
                     </p>
                 </div>
                 <div class="column_item">
-					 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsiMc1XVeQXBiGpRSc0Y6J6oT9ylnPBe-tQGEV4HaHBo0Tdy9V" alt="internet" style="height:25vh; width:20vw;" />
-					<p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%; ">
-                       The first web browser was called the Mosaic web browser In 1993,  NCSA (Uni. of Illinois) developed this browser. 
-						This browser was the first to offer a GUI. It had a url bar, back button and forward button. It also was the first to 
-						display images along with text. 
-
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsiMc1XVeQXBiGpRSc0Y6J6oT9ylnPBe-tQGEV4HaHBo0Tdy9V" alt="internet" style="height:25vh; width:20vw;" />
+                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%; ">
+                        The first web browser was called the Mosaic web browser In 1993, NCSA (Uni. of Illinois) developed this browser. This browser was the first to offer a GUI. It had a url bar, back button and forward button. It also was the first to display images along with text.
 
                     </p>
-					
-                </div>
 
+                </div>
 
             </div>
             <!-- End of Right -->
         </div>
-    </div>
     </div>
     <!--End of WWW and GUI//Start of Binary Logic-->
     <div class="modal" id="binary_logic">
@@ -660,7 +664,8 @@
                     <img src="https://knowthecode.io/wp-content/uploads/2016/10/CS_0100_Understanding_How_a_Computer_Works__1__key31-1024x693.png" alt="ASCI" style="height:40vh; width:30vw; float:left;" />
                     <br>
                     <p style="height:5%; width:150%; word-wrap:break-word; margin-left:15%;">Above is the Binary to ASCII table. As seen, each letter is represented by a number and that number furthermore is represented by a binary number. </p>
-                    <br> <br>
+                    <br>
+                    <br>
                 </div>
                 <div class="column_item">
                     <img src="https://i.pinimg.com/originals/14/dd/c0/14ddc00b5481ddda9244b285e2a0c2ca.jpg" alt="color_binary" style="height:45vh; width:30vw; margin-top:15%; float:left;" />
@@ -672,14 +677,13 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjJ1rRtNhPyf_z6BdSBpC0TU9FTfMsqDWxsYDotoqfLgpqjFJc" alt="NOT" style="height:25vh; width:20vw; float:left; margin-bottm:5%;" />
 
                     <img src="http://www.ee.surrey.ac.uk/Projects/Labview/gatesfunc/graphics/NOT1.gif" alt="NOT" style="height:25vh; width:20vw; float:left; margin-bottom:15%;" />
-                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;"> NOT Gate makes the output the oppsite of the input. The bar over the A means NOT, so the output  is NOT A.</p>
+                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;"> NOT Gate makes the output the oppsite of the input. The bar over the A means NOT, so the output is NOT A.</p>
                 </div>
                 <div class="column_item">
                     <img src="http://www.ee.surrey.ac.uk/Projects/Labview/gatesfunc/graphics/2nandtable.gif" alt="NAND" style="height:25vh; width:20vw; float:left; margin-bottm:5%;" />
                     <img src="http://www.ee.surrey.ac.uk/Projects/Labview/gatesfunc/graphics/NAND.gif" alt="NAND" style="height:25vh; width:20vw; float:left; margin-bottm:5%;" />
                     <br>
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;"> The NOT-AND gate or NAND gate gives a 1 output when at least one input is 0.</p>
-
 
                 </div>
             </div>
@@ -693,69 +697,56 @@
             <span class="span_e">&times;</span>
             <h1 style="color:0f223f">Common Programming Languages</h1>
             <p>
-               Programming Languages are sets of instructions computers follow to perform tasks. For example, the browser running this
-               program is following instructions to display this infographic correctly. When you click on an image in this infographic
-               The computer follows more instructions to open up the page for more information. There are many types of programming languages such as object-oriented, Functional programming, procedural, etc. Object-Oriented means that the data within the program stored through objects. This also allows the specific data to be used more than once throughout the code. Procedural Programming means that the language uses things such as loops and many variables that eventually lead to a result.
-               A basic way to tell languages apart is to see if they are compiled or not. Another way professionals tell languages apart is by the way you write the code. When code is written in a way that tells a computer how to complete a task, it is an imperative language. When code is written by the programmer that tells the computer exactly what to do, the language type is
-                declarative.
-
+                Programming Languages are sets of instructions computers follow to perform tasks. For example, the browser running this program is following instructions to display this infographic correctly. When you click on an image in this infographic The computer follows more instructions to open up the page for more information. There are many types of programming languages such as object-oriented, Functional programming, procedural, etc. Object-Oriented means that the data within the program stored through objects. This also allows the specific data to be used more than once throughout the code. Procedural Programming means that the language uses things such as loops and many variables that eventually lead to a result. A basic way to tell languages apart is to see if they are compiled or not. Another way professionals tell languages apart is by the way you write the code. When code is written in a way that tells a computer how to complete a task, it is an imperative language. When code is written by the programmer that tells the computer exactly what to do, the language type is declarative.
 
             </p>
-        
+
             <!--Start Left-->
             <div class="column_modal">
                 <h2> Interpreted Languages and Markup Languages </h2>
-               
-				<p>
-                    An interpreted language is a programming language that doesn't need to be compiled. To compile in programming means
-                    to turn into machine or assembly code. This code can be read directly by the processor.
+
+                <p>
+                    An interpreted language is a programming language that doesn't need to be compiled. To compile in programming means to turn into machine or assembly code. This code can be read directly by the processor.
                 </p>
                 <br>
-				<div class='column_item'>
-                <img src="https://www.logolynx.com/images/logolynx/s_b6/b6eac18f2577f07b92644a0e8f6fcb3b.png" alt="JS" style="height:25vh; width:20vw; float:left;" />
+                <div class='column_item'>
+                    <img src="https://www.logolynx.com/images/logolynx/s_b6/b6eac18f2577f07b92644a0e8f6fcb3b.png" alt="JS" style="height:25vh; width:20vw; float:left;" />
+                    <br>
+                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">Above is the Javascript programming language, used in many websites. Javascript is an object-oriented scripting language, which means that data and functions is stored in the form of objects. Javascript is a scripting object-oriented language because it carries traits of a full object-oriented language, but it doesn't carry specific traits to make it a full programming language. With Javascript, you can also get libraries for Javascript that allow it to run outside of a browser. One popular library in Node.js. With Node, you can program many things such as whole webservers.
+
+                    </p>
+                    <br>
+                </div>
+                <div class="column_item">
+                    <img src="https://www.logolynx.com/images/logolynx/s_1a/1a6dec46e15b0c11c178b4c7d1efd937.png" alt="HTML" style="height:25vh; width:20vw; float;left;" />
+                    <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">HTML stands for Hyper-Text Markup Language. It is used to make websites for people to view. It is used directly with Javascript and CSS to make a website better. For example with just HTML, websites would be very boring. </p>
+                </div>
                 <br>
-                 <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">Above is the Javascript programming language, used in many websites. Javascript is an object-oriented scripting language, which means that data and functions is stored in the form of objects.
-               Javascript is a scripting object-oriented language because it carries traits of a full object-oriented language,
-               but it doesn't carry specific traits to make it a full programming language.
-               With Javascript, you can also get libraries for Javascript that allow it to run outside of a browser.
-               One popular library in Node.js. With Node, you can program many things such as whole webservers.
- 
-                 </p>
-                 <br>
-					</div>
-				<div class="column_item">
-				 <img src="https://www.logolynx.com/images/logolynx/s_1a/1a6dec46e15b0c11c178b4c7d1efd937.png" alt="HTML" style="height:25vh; width:20vw; float;left;"/>
-					 <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">HTML stands for Hyper-Text Markup Language. It is used to make websites for people to view. It is used directly with Javascript and CSS to make a website better. For example with just HTML, websites would be very boring.    </p>
-          		 </div>
-				<br>
-		
-				</div>
+
+            </div>
             <!--End Left//Beginning Right-->
             <div class="column_modal">
                 <h2> Compiled Languages </h2>
                 <p>
-                    A compiled language is a programming language that has to be compiled into machine or assembly language. These languages
-                   usually are harder to learn because their concept is harder.
+                    A compiled language is a programming language that has to be compiled into machine or assembly language. These languages usually are harder to learn because their concept is harder.
 
                 </p>
                 <br>
-				<div class="column_item">
-                <img src="https://www.logolynx.com/images/logolynx/s_1c/1c0b94695e42daef3474fe2b7b5a12cb.png" alt='JAVA' style="height:35vh; width:15vw; float;right;" />
-                <p style="height:5%; width:200%; word-wrap:break-word; margin-left:8%;">You may be thinking, Java and Javascript? sounds like the same thing, but they are very different. Javascript helps add functionality to websites and it is only mainly run in a browser. Java can be also used on the web, but serverside, meaning it deals with the server portion of a website. Java can do a lot. You can program apps for android and desktops. The other main difference is that Java has to be compiled and Javascript doesn't. They are even different when it comes to the type of language they are. Java is object-oriented and Javascript is a scripting object-oriented language.
- 
+                <div class="column_item">
+                    <img src="https://www.logolynx.com/images/logolynx/s_1c/1c0b94695e42daef3474fe2b7b5a12cb.png" alt='JAVA' style="height:35vh; width:15vw; float;right;" />
+                    <p style="height:5%; width:200%; word-wrap:break-word; margin-left:8%;">You may be thinking, Java and Javascript? sounds like the same thing, but they are very different. Javascript helps add functionality to websites and it is only mainly run in a browser. Java can be also used on the web, but serverside, meaning it deals with the server portion of a website. Java can do a lot. You can program apps for android and desktops. The other main difference is that Java has to be compiled and Javascript doesn't. They are even different when it comes to the type of language they are. Java is object-oriented and Javascript is a scripting object-oriented language.
 
-                </p>
-				</div>
-				<br>
-				<div class="column_item">
-                 <p style="height:5%; width:200%; word-wrap:break-word; margin-left:8%;">C++ (C Plus, Plus) is another compiled programming language. It is used to build may applications and games. For example, Microsoft Word is built using C++. C++ is considered to be a multi-paradigm language meaning it can be object-oriented, procedural, and a functional programming language. </p>
-				<br>
+                    </p>
+                </div>
+                <br>
+                <div class="column_item">
+                    <p style="height:5%; width:200%; word-wrap:break-word; margin-left:8%;">C++ (C Plus, Plus) is another compiled programming language. It is used to build may applications and games. For example, Microsoft Word is built using C++. C++ is considered to be a multi-paradigm language meaning it can be object-oriented, procedural, and a functional programming language. </p>
+                    <br>
                 </div>
                 <div class="column_item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQr8LtZDS6FmUEb0XIti1rHFLsvyQpM9-Fv9WBTiq-ge1qS3qUu" alt="jobs_quote" style="height:25vh; width:20vw;"/>
-                    <p style="height:15vh; width:35vw; word-wrap:break-word; margin-top:10%;">Although that this is a quote, it is very important.
-                    Steve Jobs's isn't wrong, programming does teach you how to think. It also teaches problem solving and much more.
-                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQr8LtZDS6FmUEb0XIti1rHFLsvyQpM9-Fv9WBTiq-ge1qS3qUu" alt="jobs_quote" style="height:25vh; width:20vw;" />
+                    <p style="height:15vh; width:35vw; word-wrap:break-word; margin-top:10%;">Although that this is a quote, it is very important. Steve Jobs's isn't wrong, programming does teach you how to think. It also teaches problem solving and much more.
+
                     </p>
                 </div>
             </div>
@@ -770,12 +761,7 @@
             <span class="span_g">&times;</span>
             <h1>The GUI (Graphic User Interface) and The Internet</h1>
             <p>
-                The Graphic User Interface was a huge advancement in computing. Instead of writing instructions in a console to your computer,
-                you could now click on icons to open certain programs. In the 1970's Xerox Labs began building a systems like the GUI, which later
-                turned into the GUI. Before the GUI, you would have to type commands into a console and then the computer would follow the instructions.
-                For example if you wanted to save to a text file you may have to use the command 'open [filename].txt, then edit it in the console.
-                With the GUI, you could just click the file and edit it in a program, such as notepad. Parts of the GUI that are common are buttons,
-                cursors, and icons you can click on.
+                The Graphic User Interface was a huge advancement in computing. Instead of writing instructions in a console to your computer, you could now click on icons to open certain programs. In the 1970's Xerox Labs began building a systems like the GUI, which later turned into the GUI. Before the GUI, you would have to type commands into a console and then the computer would follow the instructions. For example if you wanted to save to a text file you may have to use the command 'open [filename].txt, then edit it in the console. With the GUI, you could just click the file and edit it in a program, such as notepad. Parts of the GUI that are common are buttons, cursors, and icons you can click on.
             </p>
             <!--Start Left-->
             <div class="column_modal">
@@ -787,11 +773,7 @@
                 <div class="column_item">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3hjW4ZjBCGJ9BNeREk3-xFF-hlzbGXrTSLAJqJ3trZxwKQNd_" alt="PC_MOUSE" style="height:25vh; width:20vw;" />
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%; ">
-                        Above is a computer mouse. It may be odd to think, but this common computer
-                        Input/Output device hasn't always existed with computers. Douglas Engelbart invented this device in 1964. It was orginally made out of wood, a circut board,
-                        and a wheel that when it was placed on a desk would control the device. In 1972,  Bill English invented innovated the mouse with
-                        a ball. English worked at Xerox, which was one of the first to use the GUI in a computer. The mouse made it easier for the user
-                        to control what happened on the computer. In 1988 Lisa M. Williams and Robert S. Cherry invented the optical mouse.
+                        Above is a computer mouse. It may be odd to think, but this common computer Input/Output device hasn't always existed with computers. Douglas Engelbart invented this device in 1964. It was orginally made out of wood, a circut board, and a wheel that when it was placed on a desk would control the device. In 1972, Bill English invented innovated the mouse with a ball. English worked at Xerox, which was one of the first to use the GUI in a computer. The mouse made it easier for the user to control what happened on the computer. In 1988 Lisa M. Williams and Robert S. Cherry invented the optical mouse.
                     </p>
                     <br />
                 </div>
@@ -807,8 +789,7 @@
                 <div class="column_item">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhqfnSIo5aez6fLkgieh1JI18IhHSuWrnUvXh0X30ATcH9hNBd" alt="MS-DOS" style="height:25vh;width:20vw;" />
                     <p style="height:5%; width:100%; word-wrap:break-word; margin-left:8%;">
-                        This is Microsoft's original operating system MS-DOS. It was a command line
-                        operating system which means you had to enter commands for the computer. Popular games like the Oregon Trail could be played on this system.
+                        This is Microsoft's original operating system MS-DOS. It was a command line operating system which means you had to enter commands for the computer. Popular games like the Oregon Trail could be played on this system.
                     </p>
                     <br />
                 </div>
@@ -819,8 +800,6 @@
             </div>
 
             <!--End Right-->
-
-
 
         </div>
 
@@ -865,65 +844,65 @@
         var google_btn = document.getElementById("google_btn");
 
         //Open Btns -- open the modals using the attached onclick event
-        item_a.onclick = function () {
+        item_a.onclick = function() {
             abacus.style.display = "block"; //abacus modal
         }
-        item_b.onclick = function () {
+        item_b.onclick = function() {
             trans.style.display = "block"; //transistor modal
         }
-        item_c.onclick = function () {
+        item_c.onclick = function() {
             www.style.display = "block"; //world wide web modal
         }
-        item_d.onclick = function () {
+        item_d.onclick = function() {
             bi.style.display = "block"; // Binary Logic Modal
         }
-        item_e.onclick = function () {
+        item_e.onclick = function() {
             pl.style.display = "block"; // Programming Language modal
         }
-        item_f.onclick = function () {
+        item_f.onclick = function() {
             gui.style.display = "block"; //Graphical User Interface Modal
         }
-        google_btn.onclick = function () {
+        google_btn.onclick = function() {
             google.style.display = "block"; // Working Google model set inside  of a modal
         }
-        source.onclick = function () {
+        source.onclick = function() {
             source_modal.style.display = "block"; //sources modal -- research links
         }
-        term.onclick = function () {
+        term.onclick = function() {
             terminology.style.display = "block"; //terminology modal -- dictionary
         }
         learnmore.onclick = function() {
             learn.style.display = "block"; // Learn More modal 
         }
         btn.onclick = function() {
-        modal.style.display = "none"; // Welcome modal
-        }
-        //Span Btns -- close modals also using the onclick event
-        span_a.onclick = function () {
+                modal.style.display = "none"; // Welcome modal
+            }
+            //Span Btns -- close modals also using the onclick event
+        span_a.onclick = function() {
             abacus.style.display = "none"; // Close the abacus modal
         }
-        span_b.onclick = function () {
+        span_b.onclick = function() {
             trans.style.display = "none"; //Close Transistor Modal
         }
-        span_c.onclick = function () {
+        span_c.onclick = function() {
             www.style.display = "none"; //Close Word Wide Web Modal
         }
-        span_d.onclick = function () {
+        span_d.onclick = function() {
             bi.style.display = "none"; // Close Binary Logic Modal
         }
-        span_e.onclick = function () {
+        span_e.onclick = function() {
             pl.style.display = "none"; // Close Programming languages modal
         }
-        span_g.onclick = function () {
+        span_g.onclick = function() {
             gui.style.display = "none"; // Close Graphical User Interface Modal
         }
-        source_close.onclick = function () {
+        source_close.onclick = function() {
             source_modal.style.display = "none"; // Close the Source modal
         }
-        span.onclick = function () {
+        span.onclick = function() {
             modal.style.display = "none"; // Close the welcome modal
         }
-        term_close.onclick = function () {
+        term_close.onclick = function() {
             terminology.style.display = "none"; // Close the terminology modal
         }
         learn_close.onclick = function() {
@@ -932,26 +911,24 @@
         span_google.onclick = function() {
             google.style.display = "none"; // Close the Google Modal
         }
+
         function onload() {
             modal.style.display = "block"; //load the welcome modal
         }
-        
-
-
 
         //google search functions -- function that goes with the working modal of the original Google
-          var url_comp = "https://www.google.com/search?q="; //This is the search URL that searches Google
-                            function search() {
-                                var search = document.getElementById("search").value; //Get the value from from the search bar -- assign it to search variable
-                                console.log(search); //log the data into the  console
-                                url_comp += search; //add the data to the URL that Google uses to search
-                                console.log(url_comp); //log the new URL in the console
-                                window.open(url_comp); //open the URL in a new window
-                                url_comp = "https://www.google.com/search?q="; //reset the search URL back to the orginal so it can be used again
-                                search = ""; //clear the search variable for new search
+        var url_comp = "https://www.google.com/search?q="; //This is the search URL that searches Google
+        function search() {
+            var search = document.getElementById("search").value; //Get the value from from the search bar -- assign it to search variable
+            console.log(search); //log the data into the  console
+            url_comp += search; //add the data to the URL that Google uses to search
+            console.log(url_comp); //log the new URL in the console
+            window.open(url_comp); //open the URL in a new window
+            url_comp = "https://www.google.com/search?q="; //reset the search URL back to the orginal so it can be used again
+            search = ""; //clear the search variable for new search
 
-                            }
-
+        }
     </script>
 </body>
+
 </html>
